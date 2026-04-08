@@ -1,2 +1,2 @@
 # Static HTML Boilerplate
-Basic HTML, CSS, and JavaScript setup for a simple website.
+Tailwind a CSS framework that's built differently from Bootstrap. Tailwind uses utility classes instead of full HTML and CSS components, and can sometimes be a more efficient system for teams. Reproduce the design below (a portion of a Dribbble page) using HTML and Tailwind CSS. The design is the same as Challenge #7 so you can compare the use of Bootstrap and Tailwind (the two most common CSS frameworks). Commit and publish your site to Netlify and upload the public Netlify and GitHub URLs to the C9: Dropbox.
