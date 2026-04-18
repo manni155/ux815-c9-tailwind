@@ -3,17 +3,196 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Dribble Mockup - Tailwind</title>
     <link rel="stylesheet" href="screen.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
+  <body class="font-sans justify-center-safe">
+    <header class="flex flex-row justify-center-safe gap-40 my-10 font-semibold h-10 items-center">
+      <select name="filterSelect" id="filterSelect" class="hover:shadow rounded-lg border-2 border-gray-300 p-1">
+        <option value="popular">Popular</option>
+        <option value="new">New & Noteworthy</option>
+      </select>
+      <nav class="object-contain overflow-auto">
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Discover</button>
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Animation</button>
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Branding</button>
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Illustration</button>
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Mobile</button>
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Print</button>
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Product Design</button>
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Typography</button>
+        <button type="button" class="rounded-full p-3 hover:text-gray-500 active:bg-gray-300">Web Design</button>
+      </nav>
+      <button type="button" class="flex flex-row gap-2 border-2 border-gray-300 rounded-full p-3 hover:shadow self-center">
+        <svg class="self-center size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+          </svg>
+      Filters</button>
+    </header>
+    <main class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 s:grid-cols-1 gap-4 justify-items-center-safe align-center">
+
+      <div class="flex flex-col rounded-lg hover:shadow-md">
+        <img class="rounded-lg" src="/images/sampleCardImage.png" alt="">
+        <div class="flex flex-row justify-center-safe">
+          <img class="flex size-5 mx-1 self-center" src="/images/logo.png" alt="Sample Logo 1">
+          <p class="mx-1">Username</p>
+            <p class="mx-1 text-gray-400 flex flex-row">
+              <svg class="fill-gray-400 mx-1 transition duration-300 hover:fill-pink-200 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              123
+            </p>
+            <p class="mx-1 text-gray-400 justify-self-end flex flex-row">
+              <svg class="fill-gray-400 mx-1 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg>
+              1.2k
+            </p>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-lg hover:shadow-md">
+        <img class="rounded-lg" src="/images/sampleCardImage2.png" alt="">
+        <div class="flex flex-row justify-center-safe">
+          <img class="flex size-5 mx-1 self-center" src="/images/logo2.png" alt="Sample Logo 1">
+          <p class="mx-1">Username</p>
+            <p class="mx-1 text-gray-400 flex flex-row">
+              <svg class="fill-gray-400 mx-1 transition duration-300 hover:fill-pink-200 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              123
+            </p>
+            <p class="mx-1 text-gray-400 justify-self-end flex flex-row">
+              <svg class="fill-gray-400 mx-1 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg>
+              1.2k
+            </p>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-lg hover:shadow-md">
+        <img class="rounded-lg" src="/images/sampleCardImage.png" alt="">
+        <div class="flex flex-row justify-center-safe">
+          <img class="flex size-5 mx-1 self-center" src="/images/logo.png" alt="Sample Logo 1">
+          <p class="mx-1">Username</p>
+            <p class="mx-1 text-gray-400 flex flex-row">
+              <svg class="fill-gray-400 mx-1 transition duration-300 hover:fill-pink-200 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              123
+            </p>
+            <p class="mx-1 text-gray-400 justify-self-end flex flex-row">
+              <svg class="fill-gray-400 mx-1 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg>
+              1.2k
+            </p>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-lg hover:shadow-md">
+        <img class="rounded-lg" src="/images/sampleCardImage2.png" alt="">
+        <div class="flex flex-row justify-center-safe">
+          <img class="flex size-5 mx-1 self-center" src="/images/logo2.png" alt="Sample Logo 1">
+          <p class="mx-1">Username</p>
+            <p class="mx-1 text-gray-400 flex flex-row">
+              <svg class="fill-gray-400 mx-1 transition duration-300 hover:fill-pink-200 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              123
+            </p>
+            <p class="mx-1 text-gray-400 justify-self-end flex flex-row">
+              <svg class="fill-gray-400 mx-1 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg>
+              1.2k
+            </p>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-lg hover:shadow-md">
+        <img class="rounded-lg" src="/images/sampleCardImage.png" alt="">
+        <div class="flex flex-row justify-center-safe">
+          <img class="flex size-5 mx-1 self-center" src="/images/logo.png" alt="Sample Logo 1">
+          <p class="mx-1">Username</p>
+            <p class="mx-1 text-gray-400 flex flex-row">
+              <svg class="fill-gray-400 mx-1 transition duration-300 hover:fill-pink-200 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              123
+            </p>
+            <p class="mx-1 text-gray-400 justify-self-end flex flex-row">
+              <svg class="fill-gray-400 mx-1 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg>
+              1.2k
+            </p>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-lg hover:shadow-md">
+        <img class="rounded-lg" src="/images/sampleCardImage2.png" alt="">
+        <div class="flex flex-row justify-center-safe">
+          <img class="flex size-5 mx-1 self-center" src="/images/logo2.png" alt="Sample Logo 1">
+          <p class="mx-1">Username</p>
+            <p class="mx-1 text-gray-400 flex flex-row">
+              <svg class="fill-gray-400 mx-1 transition duration-300 hover:fill-pink-200 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              123
+            </p>
+            <p class="mx-1 text-gray-400 justify-self-end flex flex-row">
+              <svg class="fill-gray-400 mx-1 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg>
+              1.2k
+            </p>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-lg hover:shadow-md">
+        <img class="rounded-lg" src="/images/sampleCardImage.png" alt="">
+        <div class="flex flex-row justify-center-safe">
+          <img class="flex size-5 mx-1 self-center" src="/images/logo.png" alt="Sample Logo 1">
+          <p class="mx-1">Username</p>
+            <p class="mx-1 text-gray-400 flex flex-row">
+              <svg class="fill-gray-400 mx-1 transition duration-300 hover:fill-pink-200 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              123
+            </p>
+            <p class="mx-1 text-gray-400 justify-self-end flex flex-row">
+              <svg class="fill-gray-400 mx-1 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg>
+              1.2k
+            </p>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-lg hover:shadow-md">
+        <img class="rounded-lg" src="/images/sampleCardImage2.png" alt="">
+        <div class="flex flex-row justify-center-safe">
+          <img class="flex size-5 mx-1 self-center" src="/images/logo2.png" alt="Sample Logo 1">
+          <p class="mx-1">Username</p>
+            <p class="mx-1 text-gray-400 flex flex-row">
+              <svg class="fill-gray-400 mx-1 transition duration-300 hover:fill-pink-200 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              123
+            </p>
+            <p class="mx-1 text-gray-400 justify-self-end flex flex-row">
+              <svg class="fill-gray-400 mx-1 size-4 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg>
+              1.2k
+            </p>
+        </div>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
